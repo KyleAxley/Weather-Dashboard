@@ -18,22 +18,49 @@
                 </header>
             </div>
         </div>
-    </div>
-    
-    <div class="row">
-        <aside class="col-md-3 bg-dark text-white">
-            <h2>Search by City <i class="fa-solid fa-city"></i></h2>
-            <div class="input-group mb-3">
-                <input id="enter-city" type="text" class="form-control" placeholder="" aria-label="Enter a city">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button" id="search-button">
-                        <i class="fa-brands fa-searchengin"></i>
-                    </button>
+        
+        <div class="row">
+            <div class="col-md-3 bg-dark text-white">
+                <h2>Search by City <i class="fa-solid fa-city"></i></h2>
+                <div class="input-group mb-3">
+                    <input id="enter-city" type="text" class="form-control" aria-label="Enter a city">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="search-button">
+                            <i class="fa-brands fa-searchengin"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear History</button>
+                <form id="search-history"></form>
+            </div>
+            <div class="col-lg-9">
+                <div class="row mr-0">
+                    <div class="col-lg-12 card m-3" id="weather">
+                        <div class="card-body">
+                            <h2 id="city-name" class="city-name"></h2>
+                            <p id="temperature"></p>
+                            <p id="humidity"></p>
+                            <p id="wind-speed"></p>
+                            <p id="UV-indev"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="fiveday-header">
+                    <div class="col-12">
+                        <h2><i class="fa-solid fa-cloud-sun-rain"></i> Five Day Forcast</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
                 </div>
             </div>
-        </aside>
+        </div>
     </div>
-    
+        
        
       
     <script src="./assets/js/script.js"></script>
